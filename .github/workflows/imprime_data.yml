@@ -33,8 +33,8 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - imprime_data_ubuntu
-      - imprimi_data_windows
-      - imprimi_data_macos
+      - imprime_data_windows
+      - imprime_data_macos
     
     steps:
       - name: Imprime data atual
