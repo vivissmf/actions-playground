@@ -34,7 +34,7 @@ jobs:
     needs:
       - imprime_data_ubuntu
       - imprimi_data_windows
-      - imprimi_data_ubuntu2
+      - imprimi_data_macos
     
     steps:
       - name: Imprime data atual
