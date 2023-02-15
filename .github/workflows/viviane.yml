@@ -1,0 +1,27 @@
+name: Viviane
+
+on: 
+  push:
+  
+env:
+  VARIAVEL_1: Viviane Martinez
+  VARIAVEL_2: Sao Paulo
+
+jobs:
+
+  checkout_code:
+    name: Faz checkout do codigo
+    runs-on: ubuntu-latest
+    env:
+      VARIAVEL_JOB: 33
+      
+    steps:
+    - name: Checkout repositório
+      uses: actions/checkout@v3.3.0
+      
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: ${{ vars.NOME }}
+        path: .
+      
